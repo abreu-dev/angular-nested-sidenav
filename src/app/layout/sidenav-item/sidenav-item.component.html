@@ -1,0 +1,13 @@
+<a mat-list-item (click)="onItemSelected(item)" [ngStyle]="{'padding-left': (depth * 12) + 'px'}">
+  <mat-icon style="padding-right:5px;">{{ item.iconName }}</mat-icon>
+  <span [@animateText]="linkText ? 'show' : 'hide'">{{ item.displayName }}</span>
+  <span [@animateText]="linkText ? 'show' : 'hide'" *ngIf="item.children && item.children.length">
+    <mat-icon [@onIndicatorRotate]="expanded ? 'expanded': 'collapsed'">
+      expand_more
+    </mat-icon>
+  </span>
+</a>
+<div *ngIf="expanded" [@animateText]="linkText ? 'show' : 'hide'">
+  <app-sidenav-item *ngFor="let child of item.children" [item]="child" [depth]="depth + 1">
+  </app-sidenav-item>
+</div>
