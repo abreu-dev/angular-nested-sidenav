@@ -16,7 +16,7 @@
     <div>
       <mat-nav-list>
         <ng-container *ngFor="let item of sidenavItems">
-          <a mat-list-item (click)="onItemSelected(item)">
+          <a mat-list-item (click)="onItemSelected(item)" [routerLink]="item.route">
             <mat-icon style="padding-right:5px;">{{item.iconName}}</mat-icon>
             <span [@animateText]="linkText ? 'show' : 'hide'">{{ item.displayName }}</span>
             <span [@animateText]="linkText ? 'show' : 'hide'" *ngIf="item.children && item.children.length">
@@ -26,7 +26,7 @@
             </span>
           </a>
           <div *ngIf="item.expanded" [@animateText]="linkText ? 'show' : 'hide'">
-            <a mat-list-item *ngFor="let child of item.children">
+            <a mat-list-item *ngFor="let child of item.children" [routerLink]="child.route">
               <mat-icon style="padding-right:5px;">gps_fixed</mat-icon>
               <span [@animateText]="linkText ? 'show' : 'hide'">{{ child.displayName }}</span>
             </a>

@@ -18,25 +18,25 @@ export class SidenavComponent implements OnInit {
     {
       displayName: 'Dashboard',
       iconName: 'desktop_mac',
-      route: 'dashboard',
+      route: '/dashboard',
       expanded: false
     },
     {
       displayName: 'Catalog',
       iconName: 'library_books',
-      route: 'catalog',
+      route: undefined,
       expanded: false,
       children: [
         {
           displayName: 'Categories',
           iconName: 'group',
-          route: 'catalog/categories',
+          route: '/catalog/categories',
           expanded: false
         },
         {
           displayName: 'Products',
           iconName: 'group',
-          route: 'catalog/products',
+          route: '/catalog/products',
           expanded: false
         }
       ]
