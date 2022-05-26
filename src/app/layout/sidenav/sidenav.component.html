@@ -1,7 +1,3 @@
-<!-- <mat-nav-list>
-  <app-sidenav-item *ngFor="let item of sidenavItems" [item]="item"></app-sidenav-item>
-</mat-nav-list> -->
-
 <div class="sidenav-container" [@onSideNavChange]="sideNavState ? 'open' : 'close'">
   <div fxLayout="column" fxLayoutGap="10px" style="height: 100%;">
     <div>
@@ -16,10 +12,10 @@
     <div>
       <mat-nav-list>
         <ng-container *ngFor="let item of sidenavItems">
-          <a mat-list-item (click)="onItemSelected(item)" [routerLink]="item.route">
+          <a mat-list-item (click)="onItemSelected(item)" [routerLink]="item.route" class="gb-nav-list">
             <mat-icon style="padding-right:5px;">{{item.iconName}}</mat-icon>
             <span [@animateText]="linkText ? 'show' : 'hide'">{{ item.displayName }}</span>
-            <span [@animateText]="linkText ? 'show' : 'hide'" *ngIf="item.children && item.children.length">
+            <span [@animateText]="linkText ? 'show' : 'hide'" *ngIf="item.children && item.children.length" class="child-icon">
               <mat-icon [@onIndicatorRotate]="item.expanded ? 'expanded': 'collapsed'">
                 expand_more
               </mat-icon>
@@ -32,7 +28,6 @@
             </a>
           </div>
         </ng-container>
-
       </mat-nav-list>
     </div>
   </div>

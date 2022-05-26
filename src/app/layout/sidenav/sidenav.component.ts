@@ -40,6 +40,166 @@ export class SidenavComponent implements OnInit {
           expanded: false
         }
       ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Catalog',
+      iconName: 'library_books',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Categories',
+          iconName: 'group',
+          route: '/catalog/categories',
+          expanded: false
+        },
+        {
+          displayName: 'Products',
+          iconName: 'group',
+          route: '/catalog/products',
+          expanded: false
+        }
+      ]
     }
   ];
 

@@ -1,8 +1,8 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 export const onIndicatorRotate = trigger('onIndicatorRotate', [
-  state('collapsed', style({transform: 'rotate(0deg)'})),
-  state('expanded', style({transform: 'rotate(180deg)'})),
+  state('collapsed', style({transform: 'rotate(90deg)'})),
+  state('expanded', style({transform: 'rotate(0deg)'})),
   transition('expanded <=> collapsed',
     animate('225ms cubic-bezier(0.4,0.0,0.2,1)')
   ),

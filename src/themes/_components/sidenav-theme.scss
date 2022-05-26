@@ -1,0 +1,10 @@
+@mixin gb-sidenav-theme($theme) {
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .sidenav-container {
+    background-color: mat-color($primary);
+  }
+}

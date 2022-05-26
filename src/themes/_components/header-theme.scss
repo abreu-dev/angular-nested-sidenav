@@ -1,0 +1,14 @@
+@mixin gb-header-theme($theme) {
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .gb-header {
+    background-color: mat-color($primary);
+
+    mat-icon {
+      color: mat-color($primary, 100);
+    }
+  }
+}

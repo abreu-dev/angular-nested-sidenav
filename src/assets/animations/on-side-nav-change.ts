@@ -8,7 +8,7 @@ export const onSideNavChange = trigger('onSideNavChange', [
   ),
   state('open',
     style({
-      'min-width': '200px'
+      'min-width': '250px'
     })
   ),
   transition('close => open', animate('250ms ease-in')),
