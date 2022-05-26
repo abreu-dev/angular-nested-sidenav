@@ -17,7 +17,7 @@ export class SidenavComponent implements OnInit {
   public sidenavItems: SidenavItem[] = [
     {
       displayName: 'Dashboard',
-      iconName: 'desktop_mac',
+      iconName: 'dashboard',
       route: '/dashboard',
       expanded: false
     },
@@ -29,174 +29,159 @@ export class SidenavComponent implements OnInit {
       children: [
         {
           displayName: 'Categories',
-          iconName: 'group',
+          iconName: 'radio_button_checked',
           route: '/catalog/categories',
           expanded: false
         },
         {
           displayName: 'Products',
-          iconName: 'group',
+          iconName: 'radio_button_checked',
           route: '/catalog/products',
           expanded: false
         }
       ]
     },
     {
-      displayName: 'Catalog',
-      iconName: 'library_books',
+      displayName: 'Payments',
+      iconName: 'attach_money',
       route: undefined,
       expanded: false,
       children: [
         {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
+          displayName: 'PayPal',
+          iconName: 'radio_button_checked',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Sales',
+      iconName: 'shopping_cart',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Orders',
+          iconName: 'radio_button_checked',
           expanded: false
         },
         {
-          displayName: 'Products',
-          iconName: 'group',
+          displayName: 'Shipments',
+          iconName: 'radio_button_checked',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Customers',
+      iconName: 'person',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Customers',
+          iconName: 'radio_button_checked',
+          expanded: false
+        },
+        {
+          displayName: 'Vendors',
+          iconName: 'radio_button_checked',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Promotions',
+      iconName: 'bookmark',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Discounts',
+          iconName: 'radio_button_checked',
+          expanded: false
+        },
+        {
+          displayName: 'Affiliates',
+          iconName: 'radio_button_checked',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'Configuration',
+      iconName: 'settings',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Settings',
+          iconName: 'radio_button_checked',
+          expanded: false
+        },
+        {
+          displayName: 'Countries',
+          iconName: 'radio_button_checked',
+          expanded: false
+        },
+        {
+          displayName: 'Language',
+          iconName: 'radio_button_checked',
+          expanded: false
+        }
+      ]
+    },
+    {
+      displayName: 'System',
+      iconName: 'memory',
+      route: undefined,
+      expanded: false,
+      children: [
+        {
+          displayName: 'Log',
+          iconName: 'radio_button_checked',
+          expanded: false
+        },
+        {
+          displayName: 'Themes',
+          iconName: 'radio_button_checked',
           route: '/catalog/products',
           expanded: false
         }
       ]
     },
     {
-      displayName: 'Catalog',
-      iconName: 'library_books',
+      displayName: 'Reports',
+      iconName: 'trending_up',
       route: undefined,
       expanded: false,
       children: [
         {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
+          displayName: 'Sales',
+          iconName: 'radio_button_checked',
           expanded: false
         },
         {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
+          displayName: 'Stock',
+          iconName: 'radio_button_checked',
           expanded: false
         }
       ]
     },
     {
-      displayName: 'Catalog',
-      iconName: 'library_books',
+      displayName: 'Help',
+      iconName: 'device_unknown',
       route: undefined,
       expanded: false,
       children: [
         {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
+          displayName: 'Documentation',
+          iconName: 'radio_button_checked',
           expanded: false
         },
         {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
-          expanded: false
-        }
-      ]
-    },
-    {
-      displayName: 'Catalog',
-      iconName: 'library_books',
-      route: undefined,
-      expanded: false,
-      children: [
-        {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
-          expanded: false
-        },
-        {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
-          expanded: false
-        }
-      ]
-    },
-    {
-      displayName: 'Catalog',
-      iconName: 'library_books',
-      route: undefined,
-      expanded: false,
-      children: [
-        {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
-          expanded: false
-        },
-        {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
-          expanded: false
-        }
-      ]
-    },
-    {
-      displayName: 'Catalog',
-      iconName: 'library_books',
-      route: undefined,
-      expanded: false,
-      children: [
-        {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
-          expanded: false
-        },
-        {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
-          expanded: false
-        }
-      ]
-    },
-    {
-      displayName: 'Catalog',
-      iconName: 'library_books',
-      route: undefined,
-      expanded: false,
-      children: [
-        {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
-          expanded: false
-        },
-        {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
-          expanded: false
-        }
-      ]
-    },
-    {
-      displayName: 'Catalog',
-      iconName: 'library_books',
-      route: undefined,
-      expanded: false,
-      children: [
-        {
-          displayName: 'Categories',
-          iconName: 'group',
-          route: '/catalog/categories',
-          expanded: false
-        },
-        {
-          displayName: 'Products',
-          iconName: 'group',
-          route: '/catalog/products',
+          displayName: 'About Us',
+          iconName: 'radio_button_checked',
           expanded: false
         }
       ]
@@ -225,9 +210,14 @@ export class SidenavComponent implements OnInit {
     this._sidenavService.sideNavState$.next(this.sideNavState)
   }
 
-  public onItemSelected(item: SidenavItem) {
-    if (this.linkText && item.children && item.children.length) {
-      item.expanded = !item.expanded;
+  public onItemSelected(itemS: SidenavItem) {
+    if (this.linkText && itemS.children && itemS.children.length) {
+      this.sidenavItems.forEach(item => {
+        if (item != itemS)
+        item.expanded = false;
+      })
+
+      itemS.expanded = !itemS.expanded;
     }
   }
 }

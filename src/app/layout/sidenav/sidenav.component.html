@@ -15,7 +15,7 @@
           <a mat-list-item (click)="onItemSelected(item)" [routerLink]="item.route" class="gb-nav-list">
             <mat-icon style="padding-right:5px;">{{item.iconName}}</mat-icon>
             <span [@animateText]="linkText ? 'show' : 'hide'">{{ item.displayName }}</span>
-            <span [@animateText]="linkText ? 'show' : 'hide'" *ngIf="item.children && item.children.length" class="child-icon">
+            <span [@animateText]="linkText ? 'show' : 'hide'" *ngIf="item.children && item.children.length" class="rotate-icon">
               <mat-icon [@onIndicatorRotate]="item.expanded ? 'expanded': 'collapsed'">
                 expand_more
               </mat-icon>
@@ -23,7 +23,7 @@
           </a>
           <div *ngIf="item.expanded" [@animateText]="linkText ? 'show' : 'hide'">
             <a mat-list-item *ngFor="let child of item.children" [routerLink]="child.route">
-              <mat-icon style="padding-right:5px;">gps_fixed</mat-icon>
+              <mat-icon class="child-icon" style="padding-right:5px;">{{child.iconName}}</mat-icon>
               <span [@animateText]="linkText ? 'show' : 'hide'">{{ child.displayName }}</span>
             </a>
           </div>
@@ -33,7 +33,7 @@
   </div>
   <span class="spacer"></span>
   <div fxLayout="row" fxLayoutAlign="end center" style="padding: 0px 10px;">
-    <button mat-icon-button (click)="onSidenavToggle()">
+    <button mat-icon-button (click)="onSidenavToggle()" class="arrow-icon">
       <mat-icon *ngIf="sideNavState">arrow_left</mat-icon>
       <mat-icon *ngIf="!sideNavState">arrow_right</mat-icon>
     </button>

@@ -14,9 +14,18 @@
     font-size: 15px;
   }
 
-  .child-icon {
+  .rotate-icon {
     position: absolute;
+    transform: scale(1);
     right: 1rem;
     top: 0.7rem
+  }
+
+  .child-icon {
+    transform: scale(0.5);
+  }
+
+  .arrow-icon {
+    color: #c4c0c0;
   }
 }
